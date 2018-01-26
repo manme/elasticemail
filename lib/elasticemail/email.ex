@@ -3,7 +3,6 @@ defmodule ElasticEmail.Email do
   Email calls for ElasticEmail.
   """
 
-  alias HTTPoison.Response
   alias ElasticEmail.HTTPClient
 
   @doc """
