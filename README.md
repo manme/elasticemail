@@ -36,7 +36,8 @@ Call Email function with arguments
 Send Email
 
 ```elixir
- ElasticEmail.Email.send([to: "user@email.com", subject: "Test from Elixir", bodyHtml: "<b>Some html text here</b>", from: "admin@email.com"])
+ElasticEmail.Email.send([to: "user@email.com", subject: "Test from Elixir", body_html: "<b>Some html text here</b>", from: "admin@email.com"])
+
  ```
 
  Returns

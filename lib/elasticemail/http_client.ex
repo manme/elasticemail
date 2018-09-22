@@ -11,7 +11,7 @@ defmodule ElasticEmail.HTTPClient do
   Send post request to ElasticEmail API
   """
   def post_request(url, params) do
-    post(url, "", [], [params: Enum.concat([apikey: Config.api_key!], params)])
+    post(url, {:form, Enum.concat([api_key: Config.api_key!], params)}, [])
     |> response_body
     |> response_content
   end
